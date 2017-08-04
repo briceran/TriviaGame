@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia Game</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+  </head>
+  <body style="background-image: url(assets/images/background.jpeg);">
+
+    <div class="container" style="background-color: white;">
+
+      <div class="row text-center"><h1>Statistics Trivia Game</h1>
+      </div>
+      <p id="headText" class="text-center">Question</p>
+
+      <div class="row">
+        <div class="span4"></div>
+        <div class="span4"><img id="imageQ" class="center-block" src="" /></div>
+        <div class="span4"></div>
+      </div>
+
+      <div class="row">
+
+
+          <!-- Indicates a successful or positive action -->
+          <button id="button1" type="button" class="btn btn-success btn-lg btn-block">A1</button>
+
+          <!-- Contextual button for informational alert messages -->
+          <button id="button2" type="button" class="btn btn-info btn-lg btn-block">A2</button>
+
+          <!-- Indicates caution should be taken with this action -->
+          <button id="button3" type="button" class="btn btn-warning btn-lg btn-block">A3</button>
+
+          <!-- Indicates a dangerous or potentially negative action -->
+          <button id="button4" type="button" class="btn btn-danger btn-lg btn-block">A4</button>
+      </div>
+
+      <div id="timer" class="row text-center" style="background-color: white; height: 200px;">
+      </div>
+    </div>
+
+
+
+    <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Script -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+  </body>
+</html>
