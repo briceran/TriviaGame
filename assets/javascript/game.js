@@ -1,19 +1,6 @@
 window.onload = function() {
 
 
-
-  navigator.geolocation.getCurrentPosition(
-      function(success) {
-          console.log("PickleRick!");/* Location tracking code */
-      },
-      function(failure) {
-          if(failure.message.indexOf("Only secure origins are allowed") == 0) {
-              alert('Only secure origins are allowed by your browser.');
-          }
-          console.log("fail");
-      }
-    );
-
   var correctAnswers = 0;
   var incorrectAnswers = 0;
   var unanswered = 0;
