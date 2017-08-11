@@ -168,17 +168,7 @@ function displayLoseBanner(){
   }
 
   playGame();
-  console.log("current");
-      // create placeholder variables
-  var userLatitude
-    , userLongitude;
 
-  window.navigator.geolocation.watchPosition(function(position) {
-      // Update latitude and longitude
-      console.log(position);
-      userLatitude = position.coords.latitude;
-      userLongitude = position.coords.longitude;
-  });
 
 
 
