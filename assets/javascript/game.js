@@ -101,8 +101,7 @@ window.onload = function() {
 
 //ToDo:   startGame(); banner expecting click
 //       resetGame();
-//       display number correct
-//       display correct answer was:
+//       display number correct at end
 
 
 function displayWinBanner(){
@@ -169,6 +168,17 @@ function displayLoseBanner(){
   }
 
   playGame();
+  console.log("current");
+      // create placeholder variables
+  var userLatitude
+    , userLongitude;
+
+  window.navigator.geolocation.watchPosition(function(position) {
+      // Update latitude and longitude
+      console.log(position);
+      userLatitude = position.coords.latitude;
+      userLongitude = position.coords.longitude;
+  });
 
 
 
